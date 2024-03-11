@@ -1,0 +1,72 @@
+<?php
+
+// connect to database
+
+$conn = mysqli_connect('localhost', 'root', 'Hanzini77$$', 'ifrs_reporting');
+    //check connection
+
+if(!$conn) {
+
+echo 'Connection error: '. mysqli_connect_error();
+
+ }
+
+//write query for all pizzas
+ $sql = 'SELECT ACCT_BALANCES_ID,BALANCE,CONTRACT_BALANCE,LCY_BALANCE FROM ifrs_account_balances ';
+//make query and get result
+
+ $result = mysqli_query($conn, $sql);
+
+//fetch the resulting rows as an array
+
+ $ifrs_account_balances = mysqli_fetch_all($result, MYSQLI_ASSOC);
+
+mysqli_free_result($result);
+
+
+//close connection
+
+mysqli_close($conn);
+
+ //print_r($pizzas);
+
+
+
+?>
+<!DOCTYPE html>
+<html>
+
+<?php  include ('templates/header.php'); ?>
+
+<h4 class="center grey-text">IFRS REPORTING</h4>
+
+<div class="container">
+    <div class="row">
+
+        <?php foreach ($ifrs_account_balances as $ifrs_account_balance): ?>
+
+            <div class="col s6 md3 ">
+                
+<div class="card z-depth-0">
+
+<div class="card-content center"></div> 
+<div><?php echo htmlspecialchars($ifrs_account_balance['BALANCE']); ?></div>
+<div><?php echo htmlspecialchars($ifrs_account_balance['CONTRACT_BALANCE']); ?></div>
+<div><?php echo htmlspecialchars($ifrs_account_balance['LCY_BALANCE']); ?></div>
+<div class="card-action righta-align">
+
+</div>
+</div>  
+</div>
+<?php endforeach;  ?>
+
+
+</div>
+</div>
+
+
+
+<?php  include ('templates/footer.php'); ?>
+
+
+</html>
