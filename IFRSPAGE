@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="IFRS.CSS">
+    <title>IFRS</title>
+</head>
+<body>
+    
+    <div class="main">
+
+        <nav>
+            <div class="logo">
+                <img src="IFRS2.PNG">
+                <P>INTERNATIONAL FINANCIAL REPORTING STANDARD</P>
+            </div>
+            <div class="nav-links">
+                <li><h3><a href="">SUMMARY</h3></a></li>
+
+            <ul>
+                <li><h3><a href="http://localhost:8080/IFRS.PHP">ASSET</a></h3></li>
+                <li><h3><a href="http://localhost:8080/IFRS.PHP">LIABILITIES</a></h3></li>
+                <li><h3><a href="http://localhost:8080/IFRS2.PHP">IFRSPROFIT</a></h3></li>
+                <li><h3><a href="http://localhost:8080/IFRS2.PHP">IFRSLOSS</a></h3></li>
+            </ul>
+            </div>
+            
+            </nav>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+      <h3 class="made_by">UC_HA.INX</h3>
+
+
+</body>
+</html>
